@@ -19,30 +19,30 @@ import java.net.ServerSocket;
 	 
 public class clientTcp{
 	
-	public static void main(String[] args) throws IOException {
-           
-	            Socket socket = new Socket( "192.168.1.229", 88 );
-
-	           try {
-	        	BufferedReader in = new BufferedReader(
-	        				 new InputStreamReader(socket.getInputStream()));
-	          
-	    		DataOutputStream out = new DataOutputStream(socket.getOutputStream());
-	  
-	    		out.writeBytes("xin chao Nguyen Van Tiem");
-	           
-	            String line = in.readLine();
-	            
-	            System.out.println( line );
-	             
-	           
-	            in.close();
-	            out.close();
-	            socket.close();
-	        }
-	        catch( Exception e )
-	        {
-	            e.printStackTrace();
-	        }
-	    }
+//	public static void main(String[] args) throws IOException {
+//           
+//	            Socket socket = new Socket( "192.168.1.229", 88 );
+//
+//	           try {
+//	        	BufferedReader in = new BufferedReader(
+//	        				 new InputStreamReader(socket.getInputStream()));
+//	          
+//	    		DataOutputStream out = new DataOutputStream(socket.getOutputStream());
+//	  
+//	    		out.writeBytes("xin chao Nguyen Van Tiem");
+//	           
+//	            String line = in.readLine();
+//	            
+//	            System.out.println( line );
+//	             
+//	           
+//	            in.close();
+//	            out.close();
+//	            socket.close();
+//	        }
+//	        catch( Exception e )
+//	        {
+//	            e.printStackTrace();
+//	        }
+//	    }
 }
